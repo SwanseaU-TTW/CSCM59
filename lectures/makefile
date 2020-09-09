@@ -1,20 +1,11 @@
 
-# TODO: keep track of local directory
-# FIXME: don't create files on error
+PANOPTS := -V center=false -V history=false -V revealjs-url=../reveal.js --template=template.html
+#BIBOPTS := --bibliography refs.bib --filter pandoc-citeproc
 
-TEMPLATE := /home/tom/Talks/template.odp
-ODP := odpdown
-BIB := /home/tom/Papers/all.bib
-CSL := /home/tom/Projects/website/site/csl/inline.csl
+all: 1_introduction/1_introduction.html
 
-TEMPFILE := /tmp/ref_convert
+%.html: %.md template.html 
+	pandoc -s -t revealjs $(PANOPTS) $(BIBOPTS) -o $@ $<
 
-%.odp: %.md $(TEMPLATE)
-	pandoc --filter pandoc-citeproc --no-highlight -s $< --bibliography $(BIB) -t markdown-citations-fenced_code_attributes --csl $(CSL) | \
-	  sed -e 's#()#(https://placedog.net/500)#g' > $(TEMPFILE)
-	$(ODP) --break-master=section --content-master=content $(TEMPFILE) $(TEMPLATE) $@ 
-
-%.pdf: %.odp
-	soffice --headless --convert-to pdf:impress_pdf_Export $<
-
-
+clean:
+	rm -f 1_introduction/1_introduction.html

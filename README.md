@@ -24,6 +24,8 @@ git checkout <current_semester>
 git checkout -b <next_semester>
 ```
 
+Then, change the default branch on github
+
 ## Authors
 
 Authors ordered by first contribution:

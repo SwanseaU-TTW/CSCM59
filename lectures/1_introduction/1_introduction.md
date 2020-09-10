@@ -5,11 +5,13 @@ author: Thomas Torsney-Weir
 module: "CSCM59: Relational and Object-Oriented Database Systems"
 published: false
 theme: ttw
-width: 1600
-height: 1000
 transition: fade
 slideNumber: true
 ---
+
+##
+
+![](images/mysql_overview.png)
 
 ## Database system
 
@@ -50,6 +52,8 @@ A collection of separate files with redundancy removed (as far as possible).
 
 ## Software
 
+![](images/software_diagram.svg){height=600px}
+
 ## Users
 
 * Application programmers
@@ -59,6 +63,8 @@ A collection of separate files with redundancy removed (as far as possible).
 * DBA
 
 ## Entity relationship diagram
+
+![](images/er_diagram.svg){height=600px}
 
 ## Entity relationship
 

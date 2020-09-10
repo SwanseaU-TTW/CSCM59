@@ -33,7 +33,7 @@ $endif$
 $if(theme)$
   <link rel="stylesheet" href="$revealjs-url$/theme/$theme$.css" id="theme">
 $else$
-  <link rel="stylesheet" href="$revealjs-url$/theme/black.css" id="theme">
+  <link rel="stylesheet" href="$revealjs-url$/theme/ttw.css" id="theme">
 $endif$
 $for(css)$
   <link rel="stylesheet" href="$css$"/>
@@ -109,6 +109,9 @@ $endif$
 $if(slideNumber)$
         // Display the page number of the current slide
         slideNumber: $slideNumber$,
+$else$
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
 $endif$
         // Push each slide change to the browser history
 $if(history)$
@@ -187,6 +190,9 @@ $endif$
 $if(transition)$
         // Transition style
         transition: '$transition$', // none/fade/slide/convex/concave/zoom
+$else$
+        // Transition style
+        transition: 'none', // none/fade/slide/convex/concave/zoom
 $endif$
 $if(transitionSpeed)$
         // Transition speed

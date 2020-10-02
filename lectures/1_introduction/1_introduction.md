@@ -2,7 +2,8 @@
 title: Introduction
 date: 2 Oct, 2020
 author: Thomas Torsney-Weir
-module: "CSCM59: Relational and Object-Oriented Database Systems"
+modcode: CSCM59
+modname: Relational and Object-Oriented Database Systems
 theme: ttw
 slideNumber: true
 ---
@@ -131,7 +132,7 @@ SQL can do both of these
 
 ![Boxes are relations, diamonds are relationships](images/er_diagram.svg){height=600px}
 
-## Entity relationship
+::: notes
 
 * Relationship is a part of the data!!!!!
 * Not all relationships binary.
@@ -147,6 +148,8 @@ C. Monkey wrenches are used in the Manhattan project.
 D. The Manhattan project is supplied by Smith.
 
 $B + C + D \nRightarrow A$
+
+:::
 
 ## Database models
 

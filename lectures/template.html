@@ -58,9 +58,9 @@ $if(title)$
 $if(subtitle)$
   <p class="subtitle">$subtitle$</p>
 $endif$
-$if(module)$
-  <p class="module">for $module$</p>
-$endif$
+
+  <p class="module">for $modcode$: $modname$</p>
+
 $for(author)$
   <p class="author">$author$</p>
 $endfor$
@@ -68,7 +68,6 @@ $if(date)$
   <p class="date">$date$</p>
 $endif$
 
-<img class="logo" data-src="images/swansea-university-logo.svg" height="100" />
 </section>
 $endif$
 $if(toc)$
@@ -78,6 +77,15 @@ $table-of-contents$
 $endif$
 
 $body$
+    </div>
+
+    <div class="footer">
+      <p class="footertext">$modcode$ - $title$</p>
+    </div>
+
+    <div class="logo">
+      <!-- svg images don't work here -->
+      <img src="/swansea-logo.png" height="50" />
     </div>
   </div>
 

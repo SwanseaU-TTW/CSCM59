@@ -73,6 +73,29 @@ figcaption {
   margin-bottom: 10px;
 }
 
+.reveal .footer {
+  position: absolute;
+  bottom: 1em;
+  left: 65px;
+  font-size: 0.5em;
+  width: 1720px;
+  border-top: 1px solid gray;
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+.footer .footertext {
+  display: inline;
+}
+
+.reveal .logo {
+  margin: 0;
+  position: absolute;
+  right: 0.6em;
+  bottom: 1.3em;
+}
+
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/

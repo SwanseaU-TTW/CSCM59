@@ -160,6 +160,40 @@ $B + C + D \nRightarrow A$
 * **Object**
 * **Document-oriented**
 
+## Rest of the module
+
+::::::::: {.columns}
+::: {.column}
+
+* **Basics**
+    - Introduction
+    - Relational model
+* **Data manipulation**
+* **Data definition**
+    - Database design
+    - SQL for design
+
+:::
+::: {.column}
+
+* **Concerns**
+    - Optimization
+    - Recovery
+    - Concurrency
+    - Security
+* **Special topics**
+    - Mathematical foundations
+    - OODB
+    - ORM
+    - NoSQL databases
+
+:::
+:::::::::
+
+::: notes
+Think about if there's something you want here
+:::
+
 ## Summary
 
 * Databases are everywhere

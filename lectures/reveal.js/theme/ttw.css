@@ -73,6 +73,10 @@ figcaption {
   margin-bottom: 10px;
 }
 
+.reveal ul li strong {
+  border-bottom: 2px solid green;
+}
+
 .reveal .footer {
   position: absolute;
   bottom: 1em;

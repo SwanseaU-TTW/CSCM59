@@ -81,7 +81,7 @@ The departments-Employees database contains two relations.
 A is attributes, D is domain (datatype)
 :::
 
-## Aspects of relational model
+## Relational model aspects
 
 1.  every relation is a set
 2.  not every set is a relation
@@ -92,7 +92,7 @@ A is attributes, D is domain (datatype)
 e.g. duplicate rows in table not actually possible
 :::
 
-## Aspects of relational model
+## Relational model aspects
 
 * **Structural** 
     - The data is perceived by the user as tables, and nothing but tables.

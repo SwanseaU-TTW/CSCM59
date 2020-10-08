@@ -54,7 +54,7 @@ MySQL is not started by default on the lab machines.
 There are many text editors and Visual Studio Code is one of them. If you're 
 more comfortable with some other text editor that's fine but you cannot use
 Notepad or Word for this module. They are not designed for coding and will 
-cause more problems than they solve. To get started with 
+cause more problems than they solve. 
 
 ## Install MySQL extension
 

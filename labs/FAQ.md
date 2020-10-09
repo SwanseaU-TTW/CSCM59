@@ -67,7 +67,7 @@ This is because MySQL 8 by default doesn't allow password authentication. You
 need to change the connection method. Log into mysql either with the command 
 line or mysql admin and run:
 
-`ALTER USER 'user' identified with mysql_native_password BY 'password';`
+`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';`
 
 This is because Oracle's MySQL server removed password authentication by
 default.  You likely will have to remove and log in again with VSCode. Also

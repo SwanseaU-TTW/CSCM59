@@ -306,8 +306,6 @@ Derived RV (View)
   : The value returned by a Relational Expression 
   : e.g.  `(Create view TopEmp where salary > ’33K’){Emp#, EName, Salary}`
 
-{>> below should be grouped into derived RV <<}
-
 **NOTE**: View is not actually carried out, just stored in the catalogue and
 evaluated in actual time. If the original data is altered then the view will
 reflect that change.

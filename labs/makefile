@@ -1,11 +1,12 @@
 
 
-HEADER := intro.md
+LABS := lab1.pdf lab2.pdf
 
-lab1.pdf: lab1.md
+all: $(LABS)
+
+.PHONY := all
+
+%.pdf: %.md
 	pandoc -t latex -o $@ $<
-
-%.pdf: %.md $(HEADER)
-	cat $(HEADER) $< | pandoc -t latex -o $@
 
 

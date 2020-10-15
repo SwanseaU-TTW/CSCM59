@@ -2,7 +2,7 @@
 title: CSCM59, Coursework 2020 -- 2021 
 subtitle: Deadline 11:00 a.m. on Wednesday 16/12/2020
 author: Dr. T. Torsney-Weir
-date: 15 September, 2020
+date: 15 October, 2020
 numbersections: true
 ...
 

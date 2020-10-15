@@ -1,8 +1,8 @@
 ---
-title: CSCM59, Coursework 2019 - 2020 
-subtitle: Deadline 11:00 a.m. on Friday 13/12/2019
+title: CSCM59, Coursework 2020 -- 2021 
+subtitle: Deadline 11:00 a.m. on Wednesday 16/12/2020
 author: Dr. T. Torsney-Weir
-date: 30 September, 2019
+date: 15 September, 2020
 numbersections: true
 ...
 
@@ -22,81 +22,104 @@ of the module.
 
 # Description of Task
 
-You're working for a startup in one of the hottest new areas: social network
-and open banking-based budgeting apps (ooo, ahh). You're responsible for
-designing the database to manage all user data. After asking around and reading
-documentation you have the following entities:
+Student progress through a curriculum
 
-* The database needs to track users who log into the system. Each user will
-  have a user name, preferred name, password, email, last login date and time,
-  creation date and time, birthday (for presents!), and phone number (for
-  resets!)
-* Each transaction has an associated bank account, merchant, category,
-  description, transaction date, clearing date, and amount
-* Each user can define their own set of categories for the transactions, but
-  new users have 4 by default: pets, kids, bills, and food
-* A bank account has an associated bank branch, nickname (user-defined), and
-  account number. You should also track when the last time the account was
-  updated.
-* Bank accounts can be one of several types: current, savings, loan
-* Several users can be linked to a single bank account (e.g. joint accounts)
-* A bank branch belongs to a particular bank. Each branch has its own sort code
-  and address (street, city, postal code).
-* A bank has a name and headquarters address (street, city, postal code)
-* One of the branches is called the *central branch*. Each bank has exactly 1
-  but otherwise this is just like a regular branch.
-* The ops team would like you to record any errors when updating an account
-  with the message, account, and date/time of error
-* Transaction amounts may either be debits or credits: debits are transactions
-  where money leaves the account (e.g. grocery bill) and credits are where
-  money comes in (e.g. salary).
-* The clearing date must be later or on the day of the transaction date
-* An account can only belong to one user unless it's a joint account in which
-  case it can belong to two users
+With the University's switch over from Blackboard to Canvas, let's try 
+implementing our own. Maybe we can make it better :) One thing our system will
+focus on, though is analytics rather than being a fancy content management
+system.
 
-Design, build and populate a database in at least 3NF. 
-No tables should allow null values, and you should use the fewest tables 
-possible. Then interrogate your database to ascertain the answers to the 
-following questions:
+# Entities
+
+You'll need to support the following entities:
+
+* To make things a bit easier (and for legal reasons) every university will
+  have a completely separate database.
+* The database needs to track students who log into the system. Each user will
+  have a user name, first name, last name, student number,
+  password, email, last login date and time, creation date and time, and 
+  phone number (for resets!)
+* Students have a student number and preferred name. 
+* We only need to support 3 year bachelor programs (no masters, not part 
+  time, etc). This is to simplify the amount of data you need to enter.
+* The student number is and always will be unique and is assigned by an 
+  administrator in the university.
+* There are a number of modules offered by the university. Each module has a 
+  name, academic year (i.e. 1st year, masters, etc), and code
+* There are 2 semesters per year
+* Each student is assigned to one course. To keep things simple, students
+  cannot change courses. A course is a set of modules. To reduce the number of
+  modules, assume a course only offers 2 modules per lecture. 
+* For each semester, for each module, we need to store a lecturer name
+* We need to store marks! Marks are integers between 0 and 100. Each student, 
+  for each module, for each semester, will receive a mark at the end. If the
+  student doesn't complete the module by the end of the semester then they'll
+  get a 0. 
+* During the semester no grades are entered
+
+# Instructions
+
+Design, build and populate a database in at least 3NF.  In general, tables
+should not allow null values, and you should use the fewest tables possible.
+Then interrogate your database to ascertain the answers to the following
+questions:
 
 1. Show the name and number of columns for all your tables.
 2. Show the attribute names and types for all your your tables, 
    and the primary and foreign keys.
-3. What integrity constraints are there for any one of your tables?
-4. What is the current balance for each account in the database
-5. How many branches do each of the banks have in the database?
-6. How many accounts do each of the banks have in the database?
-7. Which user has the highest net worth? Net worth is your total assets
-   (current and savings) minus total liabilities (loans).
-8. What is the discrepancy in net worth between joint account holders?
-9. For each user, what category has the highest spending?
+3. What integrity constraints are there for each of your tables?
+4. What students are enrolled in my lecures? Create a view called `enrollment`
+   with columns `lecturer`, `module_code`, `student_id`, and `student_name`.
+   `student_name` is a combination of the first and last name. This should
+   only contain lectures that are in progress.
+5. For each student in the module, it would be good to get some statistics
+   on past student performance. Create a view called `past_performance` with
+   columns `module_code`, `past_module_code`, `mark_average`, `mark_variance`,
+   `mark_high`, `mark_low`, `num_students`
+6. For a single module in a semester, show the average, variance, and number 
+   of students. Create a view called `module_performance` with columns
+   `module_code`, `module_name`, `mark_average`, `mark_variance`, `mark_high`, 
+   `mark_low`, `num_students`. 
+7. We need a query for the final degree qualification. So, for each student 
+   who's completed 3 years of study, show the average grade from all modules
+   over the last 2 years. Create a view called `degree_qualification` which 
+   only contains students who completed 3 years of study. It needs columns
+   `student_id`, `student_name`, and `final_mark` which is the above mentioned
+   average.
 
 Do not spend hours putting large amounts of data into your database. 
 Satisfy your self with sufficient data to interrogate sensibly.
 
+Where these questions ask you to create a view. Please be precise! Do not change
+the table or column names and make sure you have only those columns.
+
 # Submission
 
 When you have finished interrogating your database put the results into a
-file. Put the session (i.e. the executed SQL statements and the results
-obtained) into a text file. Draw a Functional Dependency diagram for each
-table. This can be drawn freehand if you wish but you must then scan
-it into a pdf file before submitting. I will not accept hardcopies.
-Consider using a free drawing package for Windows here:
-<http://dia-installer.de/>. Zip both files into a single zipped folder and
-submit that to Blackboard in the usual way. Please note I do not want the SQL
-code for creating and populating the database, just for the interrogation. Late
-submission will be awarded 0%, in line with University guidelines.
+3 files: 
+
+* The sql code to create and populate the database as a single text file.
+* Put the session (i.e. the executed SQL statements and the results
+  obtained) into a text sql file. For questions 4--7 you can likely just select
+  from the view you created.
+* Draw a Functional Dependency diagram for each table. This can be drawn 
+  freehand if you wish but you must then scan it into a pdf file before 
+  submitting. I will not accept hardcopies. Consider using a free drawing 
+  package for Windows here: <http://dia-installer.de/>. 
+
+Zip all files into a single zipped folder and submit that to Canvas in the
+usual way.  Late submission will be awarded 0%, in line with University
+guidelines.
 
 # Marking
 
-Marks will be awarded according to the marking rubric on Blackboard. Under
-normal circumstances all course works will be marked by 3rd January, 2020. 
+Marks will be awarded according to the marking rubric on Canvas. Under
+normal circumstances all course works will be marked by 3rd January, 2021. 
 Course works are usually marked more quickly than this.
 
 # Feedback
 
-All individual feedback will be contained in the marking rubric notes. In
-addition I will place a generic feedback file on Blackboard.
+All individual feedback will be contained in the marking rubric notes. 
 
 # Unfair Practice 
 

@@ -28,10 +28,10 @@ INSERT INTO <table name>
 ## Inserting data
 
 ```sql
-INSERT INTO Employee (ename, did, salary) VALUES ('Mackenzie', 3, 25000);
-INSERT INTO Employee (ename, did, salary) VALUES ('Castillo', 3, 27000);
-INSERT INTO Employee (ename, did, salary) VALUES ('Arroyo', 1, 45000);
-INSERT INTO Employee (ename, did, salary) VALUES ('Hays', 2, 15000);
+INSERT INTO Employee (eid, ename, did, salary) VALUES ('e5', 'Mackenzie', 3, 25000);
+INSERT INTO Employee (eid, ename, did, salary) VALUES ('e6', 'Castillo', 3, 27000);
+INSERT INTO Employee (eid, ename, did, salary) VALUES ('e7', 'Arroyo', 1, 45000);
+INSERT INTO Employee (eid, ename, did, salary) VALUES ('e8', 'Hays', 2, 15000);
 ```
 
 . . .
@@ -39,11 +39,11 @@ INSERT INTO Employee (ename, did, salary) VALUES ('Hays', 2, 15000);
 Only in MySQL!
 
 ```sql
-INSERT INTO Employee (ename, did, salary) 
-VALUES ('Mackenzie', 3, 25000),
-       ('Castillo', 3, 27000),
-       ('Arroyo', 1, 45000),
-       ('Hays', 2, 15000);
+INSERT INTO Employee (eid, ename, did, salary) 
+VALUES ('e5', 'Mackenzie', 3, 25000),
+       ('e6', 'Castillo', 3, 27000),
+       ('e7', 'Arroyo', 1, 45000),
+       ('e8', 'Hays', 2, 15000);
 ```
 
 ## Altering data

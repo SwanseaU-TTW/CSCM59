@@ -26,7 +26,7 @@ Each of the sections below contains a **Task** which you need to show to the
 deomonstrator. Here is a summary:
 
 1. Show the demonstrator the prices of AAPL
-2. Show the demonstrator the ???
+2. Show the demonstrator the list of companies
 3. Show the demonstrator the which stocks are in the portfolio
 
 # Getting an overview

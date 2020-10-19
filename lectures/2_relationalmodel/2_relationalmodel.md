@@ -133,7 +133,7 @@ Three fundamental operators
 
 ## Join
 
-```Department JOIN Employee OVER Dept```
+```Department JOIN Employee OVER Dept#```
 
 ![](images/join.svg)
 
@@ -147,7 +147,7 @@ Output from each expression is a table
 
 ## Relational expressions
 
-```(Department JOIN Employee OVER Dept) WHERE Salary <= 40K```
+```(Department JOIN Employee OVER Dept#) WHERE Salary <= 40K```
 
 ![](images/join_restrict.svg)
 
@@ -168,7 +168,7 @@ Output from one expression can form input to another
 * Tables not necessarily materialised
 * For performance reasons try not to materialised result
 
-```(Department JOIN Employee OVER Dept) WHERE Salary <= 40K```
+```(Department JOIN Employee OVER Dept#) WHERE Salary <= 40K```
 
 . . .
 

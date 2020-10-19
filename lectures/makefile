@@ -4,7 +4,7 @@ BIBOPTS := --bibliography refs.bib --filter pandoc-citeproc
 
 all: 1_introduction/1_introduction.html \
 	   2_relationalmodel/2_relationalmodel.html \
-	   3_sql/part1.html 3_sql/part2.html
+	   3_sql/part1.html 3_sql/part2.html 3_sql/part3.html
 
 %.html: %.md template.html 
 	pandoc -s -t revealjs $(PANOPTS) $(BIBOPTS) -o $@ $<

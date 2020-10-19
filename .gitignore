@@ -1,4 +1,8 @@
 coursework/*.pdf
 labs/*.pdf
+lectures/**/*.html
 vbox/*.ova
+recordings/*.mkv
+recordings/*.mp4
+
 

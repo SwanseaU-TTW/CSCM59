@@ -1,36 +1,53 @@
+---
+title: Lab 3 - Advanced selection
+author: CSCM59
+date: Due 28 Oct, 2020
+---
 
-# Task 3
+After last week's lab writing basic SQL statements, now it's time for some more
+crazy SQL statements :) As a hint, the topics used in today's lab were
+discussed in the lectures yesterday and last friday.
 
-Create a view called `Pet_Owners`, which will show the `username`, `email`, and
-`type` of both the pet and the pet owner (there should be 6 columns). Similar
-to last week a pet owner owner is a user (person or admin in the database) who
-is linked to a pet.
+We'll be using the same simple finance database from last week for our queries.
+You can access the backup file
+[here](https://canvas.swansea.ac.uk/courses/15672/modules/items/860963) to load
+into the database. It's also listed in week 2's lab in the Modules section.
 
-**HINT 1**: You will need to join the `Users` table with the `Links` table
-twice. Have a look at table aliases (n.b. be sure to read the section on table
-aliases, not column aliases): http://www.mysqltutorial.org/mysql-alias/
+If you need more help with SQL, the 
+[MySQL reference](https://dev.mysql.com/doc/refman/8.0/en/select.html) 
+may be of use.
 
-**HINT 2**: When developing views, it can slow down development time to keep
-dropping and recreating views while I figure out the proper query. I find it
-easier to first figure out the proper select query. I only create the view
-itself once I get the query part working.
+# Tasks
 
-**Optional**: You may think it's better to explicitly label the pet and owner
-in the view. In other words, you would have columns in the `Pet_Owners` table
-like `owner_username`, `pet_username`, etc. This is possible but you will need
-to use the `UNION ALL` operator
-(<https://dev.mysql.com/doc/refman/8.0/en/union.html>) and column aliases
-(<http://www.mysqltutorial.org/mysql-alias/>).
+Each of the sections below contains a **Task** which you need to show to the
+deomonstrator. Here is a summary:
 
-## Task
+1. Which stock on which day had the highest price?
+2. Which stocks have never been invested in?
+3. What is the total amount paid for all the current portfolio stocks?
 
-*Due 12/11/2019*
+# Which stock on which day had the highest price?
 
-Show your tutor:
+Write a query to get the symbol, price date, and price of the stock in the
+database with the highest price. *This must be a general query, not one specific
+to the current data in the database*
 
-* The contents of the Users table
-* The contents of the Links table
-* The results of `select * from Pet_Owners`
+**TASK**: show your demonstrator this query and the resulting table
 
-**[5 marks]**
+# Which stocks have never been invested in?
+
+Write a query to get the symbol, name, and sell date (if possible) of the
+companies that were never purchased in the portfolio.
+
+**TASK**: show your demonstrator this query and the resulting table
+
+# What is the total amount paid for all the current portfolio stocks?
+
+You have the current portfolio from last week. So now you need to figure out
+how much money this current portfolio cost (a single number). That is the total
+number of shares times the share price at the time of purchase. *The share
+price must match up with the purchase date*
+
+**TASK**: show your demonstrator this query and the resulting table
+
 

@@ -27,6 +27,31 @@ slideNumber: true
 3. Determine how relations relate to each other – foreign keys
 4. Normalize
 
+**Example**
+
+* Suppliers
+* Parts
+* What parts supplier makes
+* Quantities
+* Supplier city
+* Supplier status code
+
+## First try
+
+::::::::: {.columns}
+::: {.column}
+* Suppliers
+* Parts
+* What parts supplier makes
+* Quantities
+* Supplier city
+* Supplier status code
+:::
+::: {.column}
+![](images/1nf_tbl.svg)
+:::
+:::::::::
+
 ## Normalization
 
 ::::::::: {.columns}
@@ -41,8 +66,7 @@ slideNumber: true
 
 ## Database Normalisation
 
-* Normalisation is Non-loss
-* Reversible.
+* Normalisation is non-loss 
 * Always possible to reverse procedure to recapture the original data.
 * Normalisation is a series of `Projects`.
 * To reverse the process `join` the resulting projections
@@ -59,6 +83,17 @@ slideNumber: true
     ![](images/supplier_split.svg)
 :::
 :::::::::
+
+## Database Normalisation
+
+Relation
+  : $R \{A, B, C\}$ denotes a relation called $R$ with attributes $A$, $B$, 
+    and $C$
+
+* **Key concepts**
+    - Functional depdendencies
+    - Left-irreducability
+    - Heath's theorem
 
 ## Functional Dependencies
 
@@ -140,8 +175,8 @@ A = S#, B = Status, C= City
 
 ## Overview
 
-* **Overall approach**
-* **Normalization**
+* ~~**Overall approach**~~
+* ~~**Normalization**~~
     - theory
     - guidelines
 * **Functional dependency diagrams**
@@ -162,7 +197,8 @@ Graphical depiction of functional dependencies
 
 ## Normal forms
 
-Categories of normalization
+* Categories of normalization
+* Based on treatment of non-key attributes
 
 ![](images/normal_forms.svg){height=700px}
 
@@ -203,8 +239,6 @@ FIRST{S#, Status, City, P#, Qty}
 ::: {.column}
 ![](images/1nf_fdd.svg)
 
-* Nonkey attributes not mutually independent (City $\Rightarrow$ Status)
-* Nonkey attributes not irreducibly dependent on Primary Key(S# $\Rightarrow$ City and S# $\Rightarrow$ Status)
 :::
 :::::::::
 
@@ -214,11 +248,29 @@ FIRST{S#, Status, City, P#, Qty}
   : A relvar is in 2NF if and only if it is in 1NF and every nonkey 
     attribute is irreducibly dependent upon the primary key
 
+. . .
+
+Nonkey attribute 
+  : any attribute that does not participate in the primary key.
+
+::::::::: {.columns}
+::: {.column}
+![](images/1nf_fdd.svg)
+:::
+::: {.column}
+* Nonkey attributes not mutually independent 
+    - City $\Rightarrow$ Status
+* Nonkey attributes not irreducibly dependent on Primary Key
+    - S# $\Rightarrow$ City 
+    - S# $\Rightarrow$ Status
+:::
+:::::::::
+
 ## 2nd normal form
 
 ```
 SECOND{
-	{S#, Status, City}
+	{S#, City, Status}
 	{S#, P#, Qty}
 }
 ```
@@ -233,11 +285,6 @@ SECOND{
 :::
 ::: {.column}
 ![](images/2nf_fdd.svg)
-
-* **Transitive Dependencies**
-    - $A \Rightarrow B$ and $B \Rightarrow C$ implies that $A \Rightarrow C$
-    - S# $\Rightarrow$ City and City $\Rightarrow$ Status
-    - S# $\Rightarrow$ Status
 :::
 :::::::::
 
@@ -246,6 +293,24 @@ SECOND{
 3rd normal form
   : A relvar is in 3NF if and only if it is in 2NF and every nonkey attribute 
     is non-transitively dependent upon the primary key
+
+. . .
+
+Transitive dependency
+  : $A \Rightarrow B$ and $B \Rightarrow C$ implies that $A \Rightarrow C$
+  : Issue is that we can infer things about $C$ given $A$ which may not hold
+
+::::::::: {.columns}
+::: {.column}
+![](images/2nf_fdd.svg)
+:::
+::: {.column}
+* **Transitive Dependencies**
+    - $A \Rightarrow B$ and $B \Rightarrow C$ implies that $A \Rightarrow C$
+    - S# $\Rightarrow$ City and City $\Rightarrow$ Status
+    - S# $\Rightarrow$ Status
+:::
+:::::::::
 
 ## 3rd normal form
 
@@ -278,12 +343,14 @@ A relvar is in 3NF if and only if the *nonkey attributes* (if any) are:
 * Mutually independent
 * Irreducibly dependent on the primary key
 
-Nonkey attribute 
-  : any attribute that does not participate in the primary key.
-
 Mutually independent
   : Two or more attributes are mutually independent if none of them is 
     functionally dependent upon any combination of the others.
+
+Irreducibily dependent
+  : When $X \Rightarrow Y$, $Y$ is irreducibly dependent upon $X$ if $X$ is 
+    as small a subset as possible.
+  : i.e. make your primary key a single column if possible
 
 ## What about the other forms?
 
@@ -293,9 +360,9 @@ Mutually independent
 
 It is rare to put databases in these forms
 
-* BCNF – rare that a 3NF database is not in BCNF
-* 4NF – rarely needed in business cases
-* 5NF – rare that 4NF is not 5NF
+* **Boyce–Codd normal form (BCNF)** – rare that a 3NF database is not in BCNF
+* **4NF** – rarely needed in business cases
+* **5NF** – rare that 4NF is not 5NF
 
 ## Summary
 
@@ -303,4 +370,5 @@ It is rare to put databases in these forms
 * Heath's theorem proves that decomposition keeps information
 * Keep primary key to single column wherever possible
 * Functional dependency diagrams show how keys relate to data
+* Normal forms are about the non-key attributes
 

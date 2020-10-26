@@ -25,7 +25,7 @@ slideNumber: true
 ## Creating a database
 
 ```sql
-CREATE DATABASE Company;
+CREATE DATABASE bond_trader;
 ```
 
 ## Practical normalization
@@ -103,7 +103,7 @@ CREATE TABLE portfolio (
   bond_id INTEGER NOT NULL,
   purchase_date DATE NOT NULL,
   sell_date DATE,
-  amount DECIMAL NOT NULL,
+  amount DECIMAL(10,2) NOT NULL,
   PRIMARY KEY (entry_id),
   FOREIGN KEY (bond_id) REFERENCES bonds(bond_id)
 );

@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="177.21834mm"
+   height="57.956665mm"
+   viewBox="0 0 177.21834 57.956665"
+   version="1.1"
+   id="svg6306"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="new_tbl_bond_hl.svg">
+  <defs
+     id="defs6300">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="presentation_clip_path">
+      <rect
+         id="rect4210"
+         height="27940"
+         width="21590"
+         y="0"
+         x="0" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="346.32937"
+     inkscape:cy="-293.33273"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1900"
+     inkscape:window-height="1026"
+     inkscape:window-x="10"
+     inkscape:window-y="44"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata6303">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-14.200354,-13.265715)">
+    <g
+       style="fill-rule:evenodd;stroke-width:28.22200012;stroke-linejoin:round"
+       id="g4875"
+       transform="matrix(0.01,0,0,0.01,-5.4413129,-83.585954)">
+      <g
+         id="g4365">
+        <g
+           class="Master_Slide"
+           id="id2">
+          <g
+             class="Background"
+             id="bg-id2" />
+          <g
+             class="BackgroundObjects"
+             id="bo-id2" />
+        </g>
+      </g>
+      <g
+         id="g4645"
+         class="SlideGroup">
+        <g
+           id="g4643">
+          <g
+             id="container-id1">
+            <g
+               clip-path="url(#presentation_clip_path)"
+               class="Slide"
+               id="id1">
+              <g
+                 id="g4639"
+                 class="Page">
+                <g
+                   id="g4637"
+                   class="com.sun.star.drawing.TableShape">
+                  <g
+                     id="g4635">
+                    <rect
+                       id="rect4367"
+                       height="5576"
+                       width="17595"
+                       y="9789"
+                       x="2081"
+                       class="BoundingBox"
+                       style="fill:none;stroke:none" />
+                    <path
+                       id="path4369"
+                       d="m 2083,9791 h 3517 v 1683 H 2083 Z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#b3b3b3;stroke:none" />
+                    <text
+                       id="text4377"
+                       class="TextShape">
+                      <tspan
+                         id="tspan4375"
+                         font-weight="700"
+                         font-size="635px"
+                         class="TextParagraph"
+                         style="font-weight:700;font-size:635px;font-family:'Liberation Sans', sans-serif">
+                        <tspan
+                           id="tspan4373"
+                           y="10497"
+                           x="2333"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4371"
+                             style="fill:#000000;stroke:none">company</tspan>
+                        </tspan>
+                      </tspan>
+                    </text>
+                    <path
+                       id="path4379"
+                       d="m 5600,9791 h 2853 v 1683 H 5600 Z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#b3b3b3;stroke:none" />
+                    <text
+                       id="text4391"
+                       class="TextShape">
+                      <tspan
+                         id="tspan4389"
+                         font-weight="700"
+                         font-size="635px"
+                         class="TextParagraph"
+                         style="font-weight:700;font-size:635px;font-family:'Liberation Sans', sans-serif">
+                        <tspan
+                           id="tspan4383"
+                           y="10497"
+                           x="5850"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4381"
+                             style="fill:#000000;stroke:none">interest</tspan>
+                        </tspan>
+                        <tspan
+                           id="tspan4387"
+                           y="11208"
+                           x="5850"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4385"
+                             style="fill:#000000;stroke:none">rate</tspan>
+                        </tspan>
+                      </tspan>
+                    </text>
+                    <path
+                       id="path4393"
+                       d="m 8453,9791 h 3745 v 1683 H 8453 Z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#b3b3b3;stroke:none" />
+                    <text
+                       id="text4405"
+                       class="TextShape">
+                      <tspan
+                         id="tspan4403"
+                         font-weight="700"
+                         font-size="635px"
+                         class="TextParagraph"
+                         style="font-weight:700;font-size:635px;font-family:'Liberation Sans', sans-serif">
+                        <tspan
+                           id="tspan4397"
+                           y="10497"
+                           x="8703"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4395"
+                             style="fill:#000000;stroke:none">purchase</tspan>
+                        </tspan>
+                        <tspan
+                           id="tspan4401"
+                           y="11208"
+                           x="8703"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4399"
+                             style="fill:#000000;stroke:none">date</tspan>
+                        </tspan>
+                      </tspan>
+                    </text>
+                    <path
+                       id="path4407"
+                       d="m 12198,9791 h 3957 v 1683 h -3957 z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#b3b3b3;stroke:none" />
+                    <text
+                       id="text4415"
+                       class="TextShape">
+                      <tspan
+                         id="tspan4413"
+                         font-weight="700"
+                         font-size="635px"
+                         class="TextParagraph"
+                         style="font-weight:700;font-size:635px;font-family:'Liberation Sans', sans-serif">
+                        <tspan
+                           id="tspan4411"
+                           y="10497"
+                           x="12448"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4409"
+                             style="fill:#000000;stroke:none">sell date</tspan>
+                        </tspan>
+                      </tspan>
+                    </text>
+                    <path
+                       id="path4417"
+                       d="m 16155,9791 h 3518 v 1683 h -3518 z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#b3b3b3;stroke:none" />
+                    <text
+                       id="text4425"
+                       class="TextShape">
+                      <tspan
+                         id="tspan4423"
+                         font-weight="700"
+                         font-size="635px"
+                         class="TextParagraph"
+                         style="font-weight:700;font-size:635px;font-family:'Liberation Sans', sans-serif">
+                        <tspan
+                           id="tspan4421"
+                           y="10497"
+                           x="16405"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4419"
+                             style="fill:#000000;stroke:none">amount</tspan>
+                        </tspan>
+                      </tspan>
+                    </text>
+                    <path
+                       id="path4427"
+                       d="m 2083,11474 h 3517 v 972 H 2083 Z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#cccccc;stroke:none" />
+                    <text
+                       id="text4435"
+                       class="TextShape">
+                      <tspan
+                         id="tspan4433"
+                         font-weight="400"
+                         font-size="635px"
+                         class="TextParagraph"
+                         style="font-weight:400;font-size:635px;font-family:'Liberation Sans', sans-serif">
+                        <tspan
+                           id="tspan4431"
+                           y="12180"
+                           x="2333"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4429"
+                             style="fill:#000000;stroke:none">Apple</tspan>
+                        </tspan>
+                      </tspan>
+                    </text>
+                    <path
+                       id="path4437"
+                       d="m 5600,11474 h 2853 v 972 H 5600 Z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#cccccc;stroke:none" />
+                    <text
+                       id="text4445"
+                       class="TextShape">
+                      <tspan
+                         id="tspan4443"
+                         font-weight="400"
+                         font-size="635px"
+                         class="TextParagraph"
+                         style="font-weight:400;font-size:635px;font-family:'Liberation Sans', sans-serif">
+                        <tspan
+                           id="tspan4441"
+                           y="12180"
+                           x="6409"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4439"
+                             style="fill:#000000;stroke:none">5.00%</tspan>
+                        </tspan>
+                      </tspan>
+                    </text>
+                    <path
+                       id="path4447"
+                       d="m 8453,11474 h 3745 v 972 H 8453 Z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#cccccc;stroke:none" />
+                    <text
+                       id="text4455"
+                       class="TextShape">
+                      <tspan
+                         id="tspan4453"
+                         font-weight="400"
+                         font-size="635px"
+                         class="TextParagraph"
+                         style="font-weight:400;font-size:635px;font-family:'Liberation Sans', sans-serif">
+                        <tspan
+                           id="tspan4451"
+                           y="12180"
+                           x="8715"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4449"
+                             style="fill:#000000;stroke:none">2020-10-01</tspan>
+                        </tspan>
+                      </tspan>
+                    </text>
+                    <path
+                       id="path4457"
+                       d="m 12198,11474 h 3957 v 972 h -3957 z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#cccccc;stroke:none" />
+                    <path
+                       id="path4459"
+                       d="m 16155,11474 h 3518 v 972 h -3518 z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#cccccc;stroke:none" />
+                    <text
+                       id="text4467"
+                       class="TextShape">
+                      <tspan
+                         id="tspan4465"
+                         font-weight="400"
+                         font-size="635px"
+                         class="TextParagraph"
+                         style="font-weight:400;font-size:635px;font-family:'Liberation Sans', sans-serif">
+                        <tspan
+                           id="tspan4463"
+                           y="12180"
+                           x="16960"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4461"
+                             style="fill:#000000;stroke:none">1,000.00</tspan>
+                        </tspan>
+                      </tspan>
+                    </text>
+                    <path
+                       id="path4469"
+                       d="m 2083,12446 h 3517 v 972 H 2083 Z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#e6e6e6;stroke:none" />
+                    <text
+                       id="text4477"
+                       class="TextShape">
+                      <tspan
+                         id="tspan4475"
+                         font-weight="400"
+                         font-size="635px"
+                         class="TextParagraph"
+                         style="font-weight:400;font-size:635px;font-family:'Liberation Sans', sans-serif">
+                        <tspan
+                           id="tspan4473"
+                           y="13152"
+                           x="2333"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4471"
+                             style="fill:#000000;stroke:none">IBM</tspan>
+                        </tspan>
+                      </tspan>
+                    </text>
+                    <path
+                       id="path4479"
+                       d="m 5600,12446 h 2853 v 972 H 5600 Z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#e6e6e6;stroke:none" />
+                    <text
+                       id="text4487"
+                       class="TextShape">
+                      <tspan
+                         id="tspan4485"
+                         font-weight="400"
+                         font-size="635px"
+                         class="TextParagraph"
+                         style="font-weight:400;font-size:635px;font-family:'Liberation Sans', sans-serif">
+                        <tspan
+                           id="tspan4483"
+                           y="13152"
+                           x="6409"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4481"
+                             style="fill:#000000;stroke:none">4.00%</tspan>
+                        </tspan>
+                      </tspan>
+                    </text>
+                    <path
+                       id="path4489"
+                       d="m 8453,12446 h 3745 v 972 H 8453 Z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#e6e6e6;stroke:none" />
+                    <text
+                       id="text4497"
+                       class="TextShape">
+                      <tspan
+                         id="tspan4495"
+                         font-weight="400"
+                         font-size="635px"
+                         class="TextParagraph"
+                         style="font-weight:400;font-size:635px;font-family:'Liberation Sans', sans-serif">
+                        <tspan
+                           id="tspan4493"
+                           y="13152"
+                           x="8715"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4491"
+                             style="fill:#000000;stroke:none">1990-09-25</tspan>
+                        </tspan>
+                      </tspan>
+                    </text>
+                    <path
+                       id="path4499"
+                       d="m 12198,12446 h 3957 v 972 h -3957 z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#e6e6e6;stroke:none" />
+                    <text
+                       id="text4507"
+                       class="TextShape">
+                      <tspan
+                         id="tspan4505"
+                         font-weight="400"
+                         font-size="635px"
+                         class="TextParagraph"
+                         style="font-weight:400;font-size:635px;font-family:'Liberation Sans', sans-serif">
+                        <tspan
+                           id="tspan4503"
+                           y="13152"
+                           x="12672"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4501"
+                             style="fill:#000000;stroke:none">1998-10-17</tspan>
+                        </tspan>
+                      </tspan>
+                    </text>
+                    <path
+                       id="path4509"
+                       d="m 16155,12446 h 3518 v 972 h -3518 z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#e6e6e6;stroke:none" />
+                    <text
+                       id="text4517"
+                       class="TextShape">
+                      <tspan
+                         id="tspan4515"
+                         font-weight="400"
+                         font-size="635px"
+                         class="TextParagraph"
+                         style="font-weight:400;font-size:635px;font-family:'Liberation Sans', sans-serif">
+                        <tspan
+                           id="tspan4513"
+                           y="13152"
+                           x="16609"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4511"
+                             style="fill:#000000;stroke:none">10,000.00</tspan>
+                        </tspan>
+                      </tspan>
+                    </text>
+                    <path
+                       id="path4519"
+                       d="m 2083,13418 h 3517 v 972 H 2083 Z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#cccccc;stroke:none" />
+                    <text
+                       id="text4527"
+                       class="TextShape">
+                      <tspan
+                         id="tspan4525"
+                         font-weight="400"
+                         font-size="635px"
+                         class="TextParagraph"
+                         style="font-weight:400;font-size:635px;font-family:'Liberation Sans', sans-serif">
+                        <tspan
+                           id="tspan4523"
+                           y="14124"
+                           x="2333"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4521"
+                             style="fill:#000000;stroke:none">Ford</tspan>
+                        </tspan>
+                      </tspan>
+                    </text>
+                    <path
+                       id="path4529"
+                       d="m 5600,13418 h 2853 v 972 H 5600 Z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#cccccc;stroke:none" />
+                    <text
+                       id="text4537"
+                       class="TextShape">
+                      <tspan
+                         id="tspan4535"
+                         font-weight="400"
+                         font-size="635px"
+                         class="TextParagraph"
+                         style="font-weight:400;font-size:635px;font-family:'Liberation Sans', sans-serif">
+                        <tspan
+                           id="tspan4533"
+                           y="14124"
+                           x="6409"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4531"
+                             style="fill:#000000;stroke:none">2.00%</tspan>
+                        </tspan>
+                      </tspan>
+                    </text>
+                    <path
+                       id="path4539"
+                       d="m 8453,13418 h 3745 v 972 H 8453 Z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#cccccc;stroke:none" />
+                    <text
+                       id="text4547"
+                       class="TextShape">
+                      <tspan
+                         id="tspan4545"
+                         font-weight="400"
+                         font-size="635px"
+                         class="TextParagraph"
+                         style="font-weight:400;font-size:635px;font-family:'Liberation Sans', sans-serif">
+                        <tspan
+                           id="tspan4543"
+                           y="14124"
+                           x="8715"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4541"
+                             style="fill:#000000;stroke:none">2003-03-15</tspan>
+                        </tspan>
+                      </tspan>
+                    </text>
+                    <path
+                       id="path4549"
+                       d="m 12198,13418 h 3957 v 972 h -3957 z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#cccccc;stroke:none" />
+                    <text
+                       id="text4557"
+                       class="TextShape">
+                      <tspan
+                         id="tspan4555"
+                         font-weight="400"
+                         font-size="635px"
+                         class="TextParagraph"
+                         style="font-weight:400;font-size:635px;font-family:'Liberation Sans', sans-serif">
+                        <tspan
+                           id="tspan4553"
+                           y="14124"
+                           x="12672"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4551"
+                             style="fill:#000000;stroke:none">2007-04-10</tspan>
+                        </tspan>
+                      </tspan>
+                    </text>
+                    <path
+                       id="path4559"
+                       d="m 16155,13418 h 3518 v 972 h -3518 z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#cccccc;stroke:none" />
+                    <text
+                       id="text4567"
+                       class="TextShape">
+                      <tspan
+                         id="tspan4565"
+                         font-weight="400"
+                         font-size="635px"
+                         class="TextParagraph"
+                         style="font-weight:400;font-size:635px;font-family:'Liberation Sans', sans-serif">
+                        <tspan
+                           id="tspan4563"
+                           y="14124"
+                           x="16609"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4561"
+                             style="fill:#000000;stroke:none">50,000.00</tspan>
+                        </tspan>
+                      </tspan>
+                    </text>
+                    <path
+                       id="path4569"
+                       d="m 2083,14390 h 3517 v 972 H 2083 Z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#e6e6e6;stroke:none" />
+                    <text
+                       id="text4577"
+                       class="TextShape">
+                      <tspan
+                         id="tspan4575"
+                         font-weight="400"
+                         font-size="635px"
+                         class="TextParagraph"
+                         style="font-weight:400;font-size:635px;font-family:'Liberation Sans', sans-serif">
+                        <tspan
+                           id="tspan4573"
+                           y="15096"
+                           x="2333"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4571"
+                             style="fill:#000000;stroke:none">Disney</tspan>
+                        </tspan>
+                      </tspan>
+                    </text>
+                    <path
+                       id="path4579"
+                       d="m 5600,14390 h 2853 v 972 H 5600 Z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#e6e6e6;stroke:none" />
+                    <text
+                       id="text4587"
+                       class="TextShape">
+                      <tspan
+                         id="tspan4585"
+                         font-weight="400"
+                         font-size="635px"
+                         class="TextParagraph"
+                         style="font-weight:400;font-size:635px;font-family:'Liberation Sans', sans-serif">
+                        <tspan
+                           id="tspan4583"
+                           y="15096"
+                           x="6409"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4581"
+                             style="fill:#000000;stroke:none">3.00%</tspan>
+                        </tspan>
+                      </tspan>
+                    </text>
+                    <path
+                       id="path4589"
+                       d="m 8453,14390 h 3745 v 972 H 8453 Z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#e6e6e6;stroke:none" />
+                    <text
+                       id="text4597"
+                       class="TextShape">
+                      <tspan
+                         id="tspan4595"
+                         font-weight="400"
+                         font-size="635px"
+                         class="TextParagraph"
+                         style="font-weight:400;font-size:635px;font-family:'Liberation Sans', sans-serif">
+                        <tspan
+                           id="tspan4593"
+                           y="15096"
+                           x="8715"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4591"
+                             style="fill:#000000;stroke:none">2015-06-03</tspan>
+                        </tspan>
+                      </tspan>
+                    </text>
+                    <path
+                       id="path4599"
+                       d="m 12198,14390 h 3957 v 972 h -3957 z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#e6e6e6;stroke:none" />
+                    <path
+                       id="path4601"
+                       d="m 16155,14390 h 3518 v 972 h -3518 z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#e6e6e6;stroke:none" />
+                    <text
+                       id="text4609"
+                       class="TextShape">
+                      <tspan
+                         id="tspan4607"
+                         font-weight="400"
+                         font-size="635px"
+                         class="TextParagraph"
+                         style="font-weight:400;font-size:635px;font-family:'Liberation Sans', sans-serif">
+                        <tspan
+                           id="tspan4605"
+                           y="15096"
+                           x="16609"
+                           class="TextPosition">
+                          <tspan
+                             id="tspan4603"
+                             style="fill:#000000;stroke:none">23,000.00</tspan>
+                        </tspan>
+                      </tspan>
+                    </text>
+                    <path
+                       id="path4611"
+                       d="M 2070,9791 H 19686"
+                       inkscape:connector-curvature="0"
+                       style="fill:none;stroke:#ffffff;stroke-width:26;stroke-linejoin:round" />
+                    <path
+                       id="path4613"
+                       d="m 2083,9778 v 5597"
+                       inkscape:connector-curvature="0"
+                       style="fill:none;stroke:#ffffff;stroke-width:26;stroke-linejoin:round" />
+                    <path
+                       id="path4615"
+                       d="m 5600,9778 v 5597"
+                       inkscape:connector-curvature="0"
+                       style="fill:none;stroke:#ffffff;stroke-width:26;stroke-linejoin:round" />
+                    <path
+                       id="path4617"
+                       d="m 8453,9778 v 5597"
+                       inkscape:connector-curvature="0"
+                       style="fill:none;stroke:#ffffff;stroke-width:26;stroke-linejoin:round" />
+                    <path
+                       id="path4619"
+                       d="m 12198,9778 v 5597"
+                       inkscape:connector-curvature="0"
+                       style="fill:none;stroke:#ffffff;stroke-width:26;stroke-linejoin:round" />
+                    <path
+                       id="path4621"
+                       d="m 16155,9778 v 5597"
+                       inkscape:connector-curvature="0"
+                       style="fill:none;stroke:#ffffff;stroke-width:26;stroke-linejoin:round" />
+                    <path
+                       id="path4623"
+                       d="m 19673,9778 v 5597"
+                       inkscape:connector-curvature="0"
+                       style="fill:none;stroke:#ffffff;stroke-width:26;stroke-linejoin:round" />
+                    <path
+                       id="path4625"
+                       d="M 2070,11474 H 19686"
+                       inkscape:connector-curvature="0"
+                       style="fill:none;stroke:#ffffff;stroke-width:26;stroke-linejoin:round" />
+                    <path
+                       id="path4627"
+                       d="M 2070,12446 H 19686"
+                       inkscape:connector-curvature="0"
+                       style="fill:none;stroke:#ffffff;stroke-width:26;stroke-linejoin:round" />
+                    <path
+                       id="path4629"
+                       d="M 2070,13418 H 19686"
+                       inkscape:connector-curvature="0"
+                       style="fill:none;stroke:#ffffff;stroke-width:26;stroke-linejoin:round" />
+                    <path
+                       id="path4631"
+                       d="M 2070,14390 H 19686"
+                       inkscape:connector-curvature="0"
+                       style="fill:none;stroke:#ffffff;stroke-width:26;stroke-linejoin:round" />
+                    <path
+                       id="path4633"
+                       d="M 2070,15362 H 19686"
+                       inkscape:connector-curvature="0"
+                       style="fill:none;stroke:#ffffff;stroke-width:26;stroke-linejoin:round" />
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#fb0000;stroke-width:2.11666656;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4877"
+       width="63.829998"
+       height="55.84"
+       x="15.258687"
+       y="14.324048" />
+  </g>
+</svg>

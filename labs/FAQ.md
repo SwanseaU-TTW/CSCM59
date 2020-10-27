@@ -67,6 +67,12 @@ This is because MySQL 8 by default doesn't allow password authentication. You
 need to change the connection method. Log into mysql either with the command 
 line or mysql admin and run:
 
+## `ER_ACCESS_DENIED_NO_PASSWORD_ERROR` when connecting
+
+Sometimes mysql installs itself with a password for the root user. If so, the
+most common default password is 'mysql' so enter that for the password when
+prompted.
+
 `ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';`
 
 This is because Oracle's MySQL server removed password authentication by

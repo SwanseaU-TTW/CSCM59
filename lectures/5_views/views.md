@@ -58,11 +58,6 @@ enjoys the same closure properties as a table.
 
 This is not evaluated but stored in the catalogue under the name Good_Supplier
 
-## SQL example
-
-* **Creating a view**
-* **Using a view**
-
 ## Tricks
 
 * Data alterations in the underlying table are immediately reflected in the view when it is evaluated.

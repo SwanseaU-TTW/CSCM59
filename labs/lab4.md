@@ -40,7 +40,7 @@ table: `ALTER TABLE Users ADD PRIMARY KEY (username);`
 # Insert data
 
 Now add a record into the table: 
-`INSERT INTO Users(username, password, email, type) VALUES ('hadley', 'poodlessmell', 'hadley@awesomedog.com', 'pet');
+`INSERT INTO Users(username, password, email, type) VALUES ('hadley', 'poodlessmell', 'hadley@awesomedog.com', 'pet');`
 
 Note the use of single quotes to enclose text.  This is compulsory for text but
 shouldn't be used for other attribute types. Look up how to add several records

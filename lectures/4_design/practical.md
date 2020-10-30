@@ -53,6 +53,8 @@ CREATE TABLE <table name> (
 );
 ```
 
+Foreign keys **must** be the exact same column type!
+
 ## Data types
 
 see https://dev.mysql.com/doc/refman/8.0/en/data-types.html for more
@@ -80,6 +82,11 @@ see https://dev.mysql.com/doc/refman/8.0/en/data-types.html for more
 * **PRIMARY KEY**: combines not null and unique
 * **FOREIGN KEY**: forces column to contain values in linked table
 
+* **Notes**
+    - Foreign keys **must** be the exact same column type!
+    - `SERIAL` column type must be `BIGINT(20) UNSIGNED` for foreign 
+      keys to work
+
 ## Bond table
 
 ![bond table](images/new_tbl_bond_hl.svg){height=300px}
@@ -100,7 +107,7 @@ CREATE TABLE bonds (
 ```sql
 CREATE TABLE portfolio (
   entry_id SERIAL,
-  bond_id INTEGER NOT NULL,
+  bond_id BIGINT(20) UNSIGNED NOT NULL,
   purchase_date DATE NOT NULL,
   sell_date DATE,
   amount DECIMAL(10,2) NOT NULL,

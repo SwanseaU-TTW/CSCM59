@@ -8,8 +8,6 @@ theme: ttw
 slideNumber: true
 ---
 
-## Overview
-
 ## Revision
 
 relation (table) 

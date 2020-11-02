@@ -49,7 +49,7 @@ You'll need to support the following entities:
 * There are 2 semesters per year
 * Each student is assigned to one course. To keep things simple, students
   cannot change courses. A course is a set of modules. To reduce the number of
-  modules, assume a course only offers 2 modules per lecture. 
+  modules, assume a course only offers 2 modules per semester. 
 * For each semester, for each module, we need to store a lecturer name
 * We need to store marks! Marks are integers between 0 and 100. Each student, 
   for each module, for each semester, will receive a mark at the end. If the

@@ -18,7 +18,7 @@ slideNumber: true
 
 Predicate
   : Boolean-valued expression of several variables with quantifiers
-  : e.g. $\forall A, B \text{st} A \land B \rightarrow C \lor D$
+  : e.g. $\forall A, B \text{ st } A \land B \rightarrow C \lor D$
 
 Proposition
   : A boolean expression with and, or, not, and if
@@ -26,7 +26,7 @@ Proposition
 
 ## What is integrity?
 
-Integrity
+Integrity constraint
   : boolean expression associated with the entire database
   : must evaluate to `true` at all times
 
@@ -73,6 +73,8 @@ CHECK (status >= 1 and status <= 100);
 * `PRIMARY KEY`
 * `FOREIGN KEY`
 
+see <https://mariadb.com/kb/en/constraint/> for more
+
 ## Further example
 
 * $$
@@ -82,6 +84,11 @@ CHECK (status >= 1 and status <= 100);
   (\text{S#}\ sn\ st\ sc) \in \text{S} \rightarrow
     (sc=\text{'London'} \rightarrow st=20)
   $$
+
+::: notes
+first if statement checks if record is in db, 2nd checks that london text 
+must have status 20
+:::
 
 ## Formally
 
@@ -141,6 +148,8 @@ There can be more than one such set!
 * Every relational variable must have at least one *candidate key*
 * This is the **primary key**
 * Other candidate keys are called **alternate keys**
+
+![&nbsp;](images/cand_keys.svg){height="200px"}
 
 ## Outline
 

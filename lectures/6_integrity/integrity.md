@@ -141,7 +141,7 @@ Candidate key
 
 There can be more than one such set!
 
-![&nbsp;](images/cand_keys.svg){height="200px"}
+![department table](images/cand_keys.svg){height="200px"}
 
 ## Primary key
 
@@ -149,7 +149,7 @@ There can be more than one such set!
 * This is the **primary key**
 * Other candidate keys are called **alternate keys**
 
-![&nbsp;](images/cand_keys.svg){height="200px"}
+![department table](images/cand_keys.svg){height="200px"}
 
 ## Outline
 
@@ -170,7 +170,7 @@ Foreign key
 
 :::
 ::: {.column width="30%"}
-![&nbsp;](images/fks.svg)
+![supplier_part table](images/fks.svg)
 :::
 ::::::::: 
 

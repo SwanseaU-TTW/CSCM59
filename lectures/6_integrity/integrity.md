@@ -18,7 +18,7 @@ slideNumber: true
 
 Predicate
   : Boolean-valued expression of several variables with quantifiers
-  : e.g. $\forall A, B \text{ st } A \land B \rightarrow C \lor D$
+  : e.g. $\forall A, B \text{ s.t. } A \land B \rightarrow C \lor D$
 
 Proposition
   : A boolean expression with and, or, not, and if

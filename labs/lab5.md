@@ -13,8 +13,8 @@ Each of the sections below contains a **Task** which you need to show to the
 deomonstrator. Here is a summary:
 
 1. Show the demonstrator `Links` table
-2. The results of `describe Users` showing the user type constraint
-3. The results of `describe Links` showing the link_a/link_b constraint
+2. The results of `SHOW CREATE TABLE Users` showing the user type constraint
+3. The results of `SHOW CREATE TABLE Links` showing the link_a/link_b constraint
 
 # Create a new table
 
@@ -41,7 +41,7 @@ key to a lookup table. If you did this that's ok. You don't need to change that
 part of your database, just show the tutor that you did this and that will also
 count for the first item.
 
-**Task**: The results of `describe Users` showing the user type constraint
+**Task**: The results of `SHOW CREATE TABLE Users` showing the user type constraint
 
 # Don't allow self-friending
 
@@ -49,7 +49,7 @@ Implement a constraint to eliminate self-references in the `Links` table.
 This means that `link_a` and `link_b` must contain different usernames. Add a
 constraint to the database to account for this.
 
-**Task**: The results of `describe Links` showing the link_a/link_b constraint
+**Task**: The results of `SHOW CREATE TABLE Links` showing the link_a/link_b constraint
 
 
 

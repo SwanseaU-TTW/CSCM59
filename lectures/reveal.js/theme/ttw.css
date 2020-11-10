@@ -191,7 +191,7 @@ figcaption {
   text-shadow: none; }
 
 .reveal dl {
-  display: inline-block;
+  display: block;
   text-align: left;
   margin-left: 1em;
   margin-top: 0;

@@ -78,7 +78,7 @@ Example
 ```sql
 EXPLAIN SELECT *
 FROM Employee e, Department d
-WHERE e.eid=d.eid;
+WHERE e.did=d.did;
 ```
 
 more info: <https://dev.mysql.com/doc/refman/5.7/en/using-explain.html>

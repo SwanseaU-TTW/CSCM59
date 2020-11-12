@@ -9,7 +9,8 @@ all: 1_introduction/1_introduction.html \
 		 5_views/views.html \
 		 6_integrity/integrity.html \
 		 7_optimisation/optimisation.html \
-		 8_recovery/recovery.html
+		 8_recovery/recovery.html \
+		 9_concurrency/concurrency.html
 
 %.html: %.md template.html 
 	pandoc -s -t revealjs $(PANOPTS) $(BIBOPTS) -o $@ $<

@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="400" height="200">
+  
+  <ellipse id="Pi" cx="80" cy="50" rx="60" ry="40" stroke="black" stroke-width="3" fill="white" />
+  <ellipse id="Pj" cx="320" cy="50" rx="60" ry="40" stroke="black" stroke-width="3" fill="white" />
+  <ellipse id="Pk" cx="200" cy="150" rx="60" ry="40" stroke="black" stroke-width="3" fill="white" />
+  
+  <path id="linex" d="M140 50 L260 50 L240 40 L245 50 L240 60 L260 50" stroke="black" stroke-width="3" fill="black"/>
+  <path id="liney" d="M320 90 L251 129 L273 127 L265 121 L265 111 L251 129" stroke="black" stroke-width="3" fill="black"/>
+  <path id="linez" d="M150 129 L80 90 L108 93 L97 100 L97 112 L80 90" stroke="black" stroke-width="3" fill="black"/>
+  
+  <text id="TextPiP" x="70" y="60" fill="black" style="font-weight:bold;font-size:40px">P</text>
+  <text id="TextPii" x="90" y="65" fill="black" style="font-style:italic;font-size:20px">i</text>
+  <text id="TextPjP" x="310" y="60" fill="black" style="font-weight:bold;font-size:40px">P</text>
+  <text id="TextPji" x="330" y="65" fill="black" style="font-style:italic;font-size:20px">j</text>
+  <text id="TextPkP" x="190" y="160" fill="black" style="font-weight:bold;font-size:40px">P</text>
+  <text id="TextPki" x="210" y="165" fill="black" style="font-style:italic;font-size:20px">k</text>
+  
+  <text id="x" x="195" y="40" fill="black" style="font-style:cursive;font-size:20px">x</text>
+  <text id="y" x="290" y="125" fill="black" style="font-style:cursive;font-size:20px">y</text>
+  <text id="z" x="100" y="125" fill="black" style="font-style:cursive;font-size:20px">z</text>
+  
+</svg>

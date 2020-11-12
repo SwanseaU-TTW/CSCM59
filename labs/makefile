@@ -1,6 +1,6 @@
 
 
-LABS := lab1.pdf lab2.pdf lab3.pdf lab4.pdf lab5.pdf
+LABS := lab1.pdf lab2.pdf lab3.pdf lab4.pdf lab5.pdf lab6.pdf
 
 all: $(LABS) FAQ.pdf
 

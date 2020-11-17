@@ -55,7 +55,7 @@ Inconsistent analysis problem
 
 ![&nbsp;](images/inconsistent_analysis.svg){height=600px}
 
-## Locking
+## Solution
 
 * **Locking** prevents multiple transactions from accessing same data at same time
 
@@ -93,7 +93,7 @@ For each tuple:
 
 ![&nbsp;](images/inconsistent_analysis_solved.svg){height=600px}
 
-## Waiting for shared resourc
+## Waiting for shared resources
 
 ![&nbsp;](images/deadlock.svg){height="700px"}
 
@@ -123,13 +123,19 @@ Deadlock
 * Each transaction is time stamped with its (unique) start time
 * Transaction A requests a lock already locked by Transaction B.
 
+. . .
+
 wait-die
   : If A is older than B it waits, otherwise it dies. (A is rolled back and restarted)
   : A is impatient
 
+. . .
+
 wound-wait 
   : If A is younger than B it waits, otherwise it "wounds" B. (B is rolled back and restarted). 
   : A is lazy
+
+. . .
 
 MySQL uses wait-die but also looks at size of transaction:
 <https://dev.mysql.com/doc/refman/8.0/en/innodb-deadlocks.html>

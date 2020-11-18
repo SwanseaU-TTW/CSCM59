@@ -72,11 +72,14 @@ questions:
    with columns `lecturer`, `module_code`, `student_id`, and `student_name`.
    `student_name` is a combination of the first and last name. This should
    only contain lectures that are in progress.
-5. For each student in the module, it would be good to get some statistics
-   on past student performance. Create a view called `past_performance` with
+5. For each module, it would be good to get some statistics
+   on past student performance. This view will show statistics on how students 
+   in a given module performed in past modules they have taken. 
+   Create a view called `past_performance` with
    columns `module_code`, `past_module_code`, `mark_average`, `mark_variance`,
-   `mark_high`, `mark_low`, `num_students`
-6. For a single module in a semester, show the average, variance, and number 
+   `mark_high`, `mark_low`, `num_students`. `past_module_code` is the module
+   code for the previous module.
+6. For a single module, show the average, variance, and number 
    of students. Create a view called `module_performance` with columns
    `module_code`, `module_name`, `mark_average`, `mark_variance`, `mark_high`, 
    `mark_low`, `num_students`. 

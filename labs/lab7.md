@@ -54,7 +54,7 @@ sure to give them a nationality.
 
 # Create pet table
 
-Create a table called `Person` with the following columns: `pet_id`, `username`,
+Create a table called `Pet` with the following columns: `pet_id`, `username`,
 and `species`. `username` should be the same as your primary key column
 in your users table. Make sure to create a foreign key constraint for this 
 column. Now populate this table with all pets (n.b. you have a view for this).

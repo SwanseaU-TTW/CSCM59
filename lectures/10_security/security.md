@@ -8,6 +8,8 @@ theme: ttw
 slideNumber: true
 ---
 
+
+
 ## Introduction
 
 Security is different to Integrity
@@ -23,6 +25,12 @@ Security is different to Integrity
     - specified in some suitable language 
     - stored in the system
     - system must monitor operations to ensure constraints are enforced
+
+## Outline
+
+* Concepts
+* Implementation 1: Discretionary control
+* Implementation 2: Mandatory control
 
 ## Aspects of security
 
@@ -61,7 +69,21 @@ if passwords are used how is their integrity enforced?
 
 ![<https://www.theregister.com/2018/01/02/intel_cpu_design_flaw/>](images/intel2.png)
 
-## Two approaches
+## Database design
+
+* 'Who can do what' is a policy decision
+* DBMS only enforces policy decisions
+* Security is another type of *constraint*
+    * saved in catalog
+    * specified with SQL
+
+::: notes
+* There must be a means of checking requests against constraints.
+* The system must be able to recognise the source of a request. 
+  (note: a single id may be given to several users)
+:::
+
+## Implementations
 
 Discretionary control
 : Each user is given rights over certain objects for certain operations
@@ -72,37 +94,29 @@ Mandatory control
 : Each user and each object is given a level, and typically cannot access anything above that level
 : **Not in MySQL**
 
-## System must be informed
-
-* Since the decision as to ‘who can do what’ is policy, it is outside the DBMS’s control. DBMS can only enforce decisions when they are made.
-* Constraints must be declared using an appropriate language, and saved in the catalogue.
-* There must be a means of checking requests against constraints.
-* The system must be able to recognise the source of a request. 
-  (note: a single id may be given to several users)
-
 ## Discretionary control
 
-We need a language in which we can express constraints.
-NOTE:  It is easier to state what is allowed than to state what is forbidden. Therefore we are expressing authorities, rather than constraints.
+* We need a language in which we can express constraints
+* Easier to state what is allowed than what is forbidden
 
 Example:
 ```
-	GRANT		<priviledge list>
-	ON		<relvar name>
-	TO		<user id list>
+	GRANT	<priviledge list>
+	ON    <relvar name>
+	TO    <user id list>;
 ```
-
-NOTE: "all" can be used as a legal id
-
-more: <https://dev.mysql.com/doc/refman/5.7/en/grant.html>
 
 ## Language
 
 ```sql
-GRANT	 SELECT, DELETE
-	ON			S
-	TO			Jim, Fred, Mary
+GRANT SELECT, DELETE
+	ON  S
+	TO  Jim, Fred, Mary;
 ```
+
+**NOTE**: "all" can be used as a legal id
+
+more: <https://dev.mysql.com/doc/refman/5.7/en/grant.html>
 
 ## Privileges
 
@@ -112,7 +126,7 @@ GRANT	 SELECT, DELETE
 * UPDATE
 * ALL
 
-NOTE: Often queries will touch other unexpected other objects (e.g. views)
+**NOTE**: Often queries will touch other unexpected other objects (e.g. views)
 
 One can also grant privileges to create, drop, rename etc, etc. 
 
@@ -120,63 +134,78 @@ One can also grant privileges to create, drop, rename etc, etc.
 
 What happens when authority is not allowed for an enquiry?
 
-Suggestions:
-1. Send error message. Careful not to be too explicit!
-2. Lock terminal?
-3. Terminate program?
-4. Keep a log of all requests?...or maybe just refused requests?
+* **Ideas**
+    * Send error message. Careful not to be too explicit!
+    * Lock terminal?
+    * Terminate program?
+    * Keep a log of all requests?...or maybe just refused requests?
+
+## Implementations
+
+Discretionary control **(Done!)**
+: Each user is given rights over certain objects for certain operations
+
+Mandatory control
+: Each user and each object is given a level, and typically cannot access anything above that level
+: **Not in MySQL**
 
 ## Mandatory control
 
-Each data object has a level.
-Each user has a level.
+* Each data object has a level
+* Each user has a level
 
-Then
-	a) User x can retrieve object y only if level x >= level y. (Simple security property)
+Then:
 
-	b) User x can update object y only if x = y. (Star property)
+Simple security policy
+: User x can retrieve object y only if level x >= level y
 
-Why?
+Star property
+: User x can update object y only if x = y
 
-## Implementation
+## How it works
 
-Each tuple must have an extra attribute containing its level.
+* Each tuple must have an extra attribute containing its level
+* Anything written by user level $x$ has that value automatically
 
-Anything written by user level x has that value automatically.
+![&nbsp;](images/tbl_demo.svg)
 
-![](images/tbl_demo.svg)
+## Example
 
-## Implementation
+* User U3 = level 3
+* User U2 = level 2
 
-User U3 = level 3
-User U2 = level 2
+```sql
+SELECT * FROM mydata;
+```
 
-Retrieve all from Tablename
+![&nbsp;](images/tbl_demo.svg)
 
-U3 sees four tuples.
-U2 sees two tuples.
+. . .
 
-## Request modification
+* U3 sees four tuples
+* U2 sees two tuples
 
-S where city = "London"
+## Implementation details
+
+`S where city = "London"`
 
 Becomes
 
-S where city  = “London” and level <= user level;
+`S where city  = "London" and level <= user level;`
 
-Again must be invisible to user.
+Must be invisible to user
 
 ## Problems?
 
-Looking at the relvar again:
+![&nbsp;](images/tbl_demo.svg)
 
-User U3 will be able to see four tuples.
-Will be unaware that supplier S4 exists.
+* User U3 will be able to see four tuples
+* Will be unaware that supplier S4 exists.
 
 So following request seems reasonable:
 
 ```sql
-Insert into S tuple	{s# = s4,
+Insert into S tuple	{`s#` = s4,
 			Sname = Baker,
 			Status = 25,
 			City = Rome,
@@ -188,7 +217,7 @@ Insert into S tuple	{s# = s4,
 This will need to become:
 
 ```sql
-Insert into S tuple	{s# = s4,
+Insert into S tuple	{`s#` = s4,
 			Sname = Baker,
 			Status = 25,
 			City = Rome,
@@ -196,9 +225,14 @@ Insert into S tuple	{s# = s4,
 			};
 ```
 
-Note that implicitly the primary key now is a composite key of S# and level.
-
-Depending upon the user level each of users U1, U2, U3 and U4 will see completely different views of the data.
+* **Note**: implicitly the primary key now is a composite key of S# and level
+* Different users with different levels see completely different views of data
 
 ## Summary
+
+* Policy decisions are made outside the DBMS
+* Job of DBMS is to enforce decisions
+* Implementation 1: Discretionary control
+* Implementation 2: Mandatory control
+
 

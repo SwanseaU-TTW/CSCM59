@@ -74,5 +74,6 @@ you need to populate these two new columns with the `pet_id` from Pet and
 `person_id` from Person tables. For this you will need an `UPDATE` statement.
 
 **Task**: Show the demonstrator the results of `SHOW CREATE TABLE Links`
+
 **Task**: Show the demonstrator the results of `SELECT * FROM Links`
 

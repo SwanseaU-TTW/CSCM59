@@ -297,5 +297,5 @@ $\{t.\text{Sname} | \exists s \in S, \exists p \in SP, s.\text{s#} = p.\text{s#}
 
 * **relational algebra**: kind of an abstract version of SQL
 * **relational calculus**: set theory
-* Need to practice this!
+* Need to [practice](https://canvas.swansea.ac.uk/courses/15672/modules/items/918209) this!
 

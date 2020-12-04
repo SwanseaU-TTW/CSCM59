@@ -13,7 +13,8 @@ all: 1_introduction/1_introduction.html \
 		 9_concurrency/concurrency.html \
 		 10_security/security.html \
 		 11_oodb/oodb.html \
-		 12_orm/orm.html
+		 12_orm/orm.html \
+		 13_foundations/foundations.html 
 
 %.html: %.md template.html 
 	pandoc -s -t revealjs $(PANOPTS) $(BIBOPTS) -o $@ $<

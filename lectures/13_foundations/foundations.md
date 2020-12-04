@@ -192,7 +192,7 @@ $A\{\text{S#}, \text{Status}\}$
 
 Queries are in the form of:
 
-$\{t | P(t) \}$
+$\{ t | P(t) \}$
 
 * $t$ is a *magic* tuple
 * $P(t)$ is a predicate function
@@ -289,7 +289,11 @@ WHERE S.`S#`=SP.`S#`
 ::: {.column width="33%"}
 ### Relational calculus
 
-$\{t.\text{Sname} | \exists s \in S, \exists p \in SP, s.\text{s#} = p.\text{s#} and p.\text{P#} = P2\}$
+$$\begin{eqnarray} 
+\{t.\text{Sname} | \exists s \in S, \exists p \in SP, \\
+    s.\text{s#} = p.\text{s#} \\
+    \text{ and } p.\text{P#} = P2\}
+\end{eqnarray}$$
 :::
 :::::::::
 

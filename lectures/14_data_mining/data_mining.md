@@ -219,13 +219,13 @@ All data so far has been seen as 2-dimensional
 * Data viewed as a cube (or hypercube)
 * Each cell contains summary stats for that set of criteria
 
-![olap cube](images/olap_cube.svg)
+![olap cube](images/olap_cube.svg){height="550px"}
 
 ## Pivoting
 
 By "pivoting" a (hyper)cube around an axis we get a different interpretation
 
-![olap cube](images/olap_cube.svg)
+![olap cube](images/olap_cube.svg){height="550px"}
 
 ## Summary
 

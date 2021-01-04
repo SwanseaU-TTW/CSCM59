@@ -58,7 +58,7 @@ USE cscm59_csv;
 
 -- views students needed to create
 
-CREATE VIEW enrollment AS
+CREATE OR REPLACE VIEW enrollment AS
 SELECT c.lecturer_username as lecturer, c.code as module_code, 
        p.studentnumber as student_id, 
        concat(p.firstname, ' ', p.lastname) as student_name
@@ -71,10 +71,10 @@ and c.semester=m.name
 WHERE m.mark is null
 ORDER BY c.code, p.studentnumber;
 
-CREATE VIEW past_performance AS
+CREATE OR REPLACE VIEW past_performance AS
 SELECT m.code as module_code, past.code as past_module_code,
-       AVG(past.mark) as mark_average, VARIANCE(past.mark) as mark_variance,
-       MAX(past.mark) as mark_high, MIN(past.mark) as mark_low,
+       round(AVG(past.mark)) as mark_average, ROUND(VARIANCE(past.mark)) as mark_variance,
+       round(MAX(past.mark)) as mark_high, ROUND(MIN(past.mark)) as mark_low,
        COUNT(past.mark) as num_students
 FROM marks m
 JOIN marks past
@@ -82,20 +82,20 @@ ON m.studentnumber=past.studentnumber
 and m.name>past.name
 GROUP BY m.code, past.code;
 
-CREATE VIEW module_performance AS
+CREATE OR REPLACE VIEW module_performance AS
 SELECT m.code as module_code, c.name,
-       AVG(m.mark) as mark_average, VARIANCE(m.mark) as mark_variance,
-       MAX(m.mark) as mark_high, MIN(m.mark) as mark_low,
+       ROUND(AVG(m.mark)) as mark_average, ROUND(VARIANCE(m.mark)) as mark_variance,
+       ROUND(MAX(m.mark)) as mark_high, ROUND(MIN(m.mark)) as mark_low,
        COUNT(m.mark) as num_students
 FROM marks m
 JOIN curriculum c
 ON c.code=m.code
 GROUP BY m.code, c.name;
 
-CREATE VIEW degree_qualification AS
+CREATE OR REPLACE VIEW degree_qualification AS
 SELECT done.studentnumber as student_id, 
        CONCAT(p.firstname, ' ', p.lastname) as student_name, 
-       AVG(m.mark) as final_mark
+       ROUND(AVG(m.mark)) as final_mark
 FROM marks m
 JOIN (SELECT studentnumber
       FROM marks

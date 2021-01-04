@@ -8,7 +8,7 @@ errcode=$?
 if [ $errcode -eq 0 ]; then
   score=10
   comments=""
-elif [ $errcode -eq 1]; then
+elif [ $errcode -eq 1 ]; then
   score=0
   comments="sql files don't load --- see log"
 elif [ $errcode -eq 2 ]; then

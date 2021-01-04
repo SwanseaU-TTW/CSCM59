@@ -1,0 +1,51 @@
+code,name,academicyear,course,semester,sem_start,sem_end,lecturer_fname,lecturer_lname,lecturer_username,lecturer_email
+CS110,Programming I,1,Computer Science,1718TB1,2017-10-01,2018-01-15,Daniele,Garrison,DGarrison,D.Garrison@swansea.ac.uk
+CS110,Programming I,1,Computer Science,1819TB1,2018-10-01,2019-01-15,Daniele,Garrison,DGarrison,D.Garrison@swansea.ac.uk
+CS111,Programming II,1,Computer Science,1718TB1,2017-10-01,2018-01-15,Isha,Sharma,ISharma,I.Sharma@swansea.ac.uk
+CS111,Programming II,1,Computer Science,1819TB1,2018-10-01,2019-01-15,Isha,Sharma,ISharma,I.Sharma@swansea.ac.uk
+CS120,CS Principles,1,Computer Science,1718TB2,2018-02-01,2018-05-31,Gabriela,Ford,GFord,G.Ford@swansea.ac.uk
+CS120,CS Principles,1,Computer Science,1819TB2,2019-02-01,2019-05-31,Gabriela,Ford,GFord,G.Ford@swansea.ac.uk
+CS130,What is a computer?,1,Computer Science,1718TB2,2018-02-01,2018-05-31,Daniele,Garrison,DGarrison,D.Garrison@swansea.ac.uk
+CS130,What is a computer?,1,Computer Science,1819TB2,2019-02-01,2019-05-31,Daniele,Garrison,DGarrison,D.Garrison@swansea.ac.uk
+CS210,Databases,2,Computer Science,1819TB1,2018-10-01,2019-01-15,Isha,Sharma,ISharma,I.Sharma@swansea.ac.uk
+CS210,Databases,2,Computer Science,1920TB1,2019-10-01,2020-01-15,Isha,Sharma,ISharma,I.Sharma@swansea.ac.uk
+CS250,Theory,2,Computer Science,1819TB1,2018-10-01,2019-01-15,Gabriela,Ford,GFord,G.Ford@swansea.ac.uk
+CS250,Theory,2,Computer Science,1920TB1,2019-10-01,2020-01-15,Gabriela,Ford,GFord,G.Ford@swansea.ac.uk
+CS220,Technical writing,2,Computer Science,1819TB2,2019-02-01,2019-05-31,Daniele,Garrison,DGarrison,D.Garrison@swansea.ac.uk
+CS220,Technical writing,2,Computer Science,1920TB2,2020-02-01,2020-05-31,Daniele,Garrison,DGarrison,D.Garrison@swansea.ac.uk
+CS275,Robots,2,Computer Science,1819TB2,2019-02-01,2019-05-31,Isha,Sharma,ISharma,I.Sharma@swansea.ac.uk
+CS275,Robots,2,Computer Science,1920TB2,2020-02-01,2020-05-31,Isha,Sharma,ISharma,I.Sharma@swansea.ac.uk
+CS370,Visualization,3,Computer Science,1920TB1,2019-10-01,2020-01-15,Gabriela,Ford,GFord,G.Ford@swansea.ac.uk
+CS370,Visualization,3,Computer Science,2021TB1,2020-10-01,2021-01-15,Gabriela,Ford,GFord,G.Ford@swansea.ac.uk
+CS320,Machine learning,3,Computer Science,1920TB1,2019-10-01,2020-01-15,Daniele,Garrison,DGarrison,D.Garrison@swansea.ac.uk
+CS320,Machine learning,3,Computer Science,2021TB1,2020-10-01,2021-01-15,Gabriela,Ford,GFord,G.Ford@swansea.ac.uk
+CS360,Graphics,3,Computer Science,1920TB1,2019-10-01,2020-01-15,Isha,Sharma,ISharma,I.Sharma@swansea.ac.uk
+CS360,Graphics,3,Computer Science,2021TB1,2020-10-01,2021-01-15,Isha,Sharma,ISharma,I.Sharma@swansea.ac.uk
+CS380,Security,3,Computer Science,1920TB2,2020-02-01,2020-05-31,Gabriela,Ford,GFord,G.Ford@swansea.ac.uk
+CS390,Networking,3,Computer Science,1920TB2,2020-02-01,2020-05-31,Daniele,Garrison,DGarrison,D.Garrison@swansea.ac.uk
+CS305,HCI,3,Computer Science,1920TB2,2020-02-01,2020-05-31,Isha,Sharma,ISharma,I.Sharma@swansea.ac.uk
+HS110,Western civ I,1,History,1718TB1,2017-10-01,2018-01-15,Huxley,Tillman,HTillman,H.Tillman@swansea.ac.uk
+HS110,Western civ I,1,History,1819TB1,2018-10-01,2019-01-15,Huxley,Tillman,HTillman,H.Tillman@swansea.ac.uk
+HS111,Western civ II,1,History,1718TB1,2017-10-01,2018-01-15,Laurence,Sparrow,LSparrow,L.Sparrow@swansea.ac.uk
+HS111,Western civ II,1,History,1819TB1,2018-10-01,2019-01-15,Laurence,Sparrow,LSparrow,L.Sparrow@swansea.ac.uk
+HS120,Eastern civ I,1,History,1718TB2,2018-02-01,2018-05-31,Charlotte,Taylor,CTaylor,C.Taylor@swansea.ac.uk
+HS120,Eastern civ I,1,History,1819TB2,2019-02-01,2019-05-31,Charlotte,Taylor,CTaylor,C.Taylor@swansea.ac.uk
+HS121,Eastern civ II,1,History,1718TB2,2018-02-01,2018-05-31,Huxley,Tillman,HTillman,H.Tillman@swansea.ac.uk
+HS121,Eastern civ II,1,History,1819TB2,2019-02-01,2019-05-31,Huxley,Tillman,HTillman,H.Tillman@swansea.ac.uk
+HS210,Antarctica,2,History,1819TB1,2018-10-01,2019-01-15,Laurence,Sparrow,LSparrow,L.Sparrow@swansea.ac.uk
+HS210,Antarctica,2,History,1920TB1,2019-10-01,2020-01-15,Laurence,Sparrow,LSparrow,L.Sparrow@swansea.ac.uk
+HS250,Native americans,2,History,1819TB1,2018-10-01,2019-01-15,Charlotte,Taylor,CTaylor,C.Taylor@swansea.ac.uk
+HS250,Native americans,2,History,1920TB1,2019-10-01,2020-01-15,Charlotte,Taylor,CTaylor,C.Taylor@swansea.ac.uk
+HS220,Dinosaurs,2,History,1819TB2,2019-02-01,2019-05-31,Huxley,Tillman,HTillman,H.Tillman@swansea.ac.uk
+HS220,Dinosaurs,2,History,1920TB2,2020-02-01,2020-05-31,Huxley,Tillman,HTillman,H.Tillman@swansea.ac.uk
+HS275,History of dogs,2,History,1819TB2,2019-02-01,2019-05-31,Laurence,Sparrow,LSparrow,L.Sparrow@swansea.ac.uk
+HS275,History of dogs,2,History,1920TB2,2020-02-01,2020-05-31,Laurence,Sparrow,LSparrow,L.Sparrow@swansea.ac.uk
+HS370,Farming in the UK,3,History,1920TB1,2019-10-01,2020-01-15,Charlotte,Taylor,CTaylor,C.Taylor@swansea.ac.uk
+HS370,Farming in the UK,3,History,2021TB1,2020-10-01,2021-01-15,Charlotte,Taylor,CTaylor,C.Taylor@swansea.ac.uk
+HS320,Vikings,3,History,1920TB1,2019-10-01,2020-01-15,Huxley,Tillman,HTillman,H.Tillman@swansea.ac.uk
+HS320,Vikings,3,History,2021TB1,2020-10-01,2021-01-15,Laurence,Sparrow,LSparrow,L.Sparrow@swansea.ac.uk
+HS360,North pole expeditions,3,History,1920TB1,2019-10-01,2020-01-15,Laurence,Sparrow,LSparrow,L.Sparrow@swansea.ac.uk
+HS360,North pole expeditions,3,History,2021TB1,2020-10-01,2021-01-15,Charlotte,Taylor,CTaylor,C.Taylor@swansea.ac.uk
+HS380,Abandoned islands,3,History,1920TB2,2020-02-01,2020-05-31,Charlotte,Taylor,CTaylor,C.Taylor@swansea.ac.uk
+HS390,Canada from 1990 to today,3,History,1920TB2,2020-02-01,2020-05-31,Huxley,Tillman,HTillman,H.Tillman@swansea.ac.uk
+HS305,US Civil War,3,History,1920TB2,2020-02-01,2020-05-31,Laurence,Sparrow,LSparrow,L.Sparrow@swansea.ac.uk

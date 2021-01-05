@@ -24,7 +24,7 @@ fi
 IFS=$'\n'
 viewfile=$(grep -r -i -l '^CREATE .*VIEW' *)
 let numviewfiles=0
-for f in ${sqlfile}; do
+for f in ${viewfile}; do
   let numviewfiles++
 done
 if [ $numviewfiles -gt 1 ]; then

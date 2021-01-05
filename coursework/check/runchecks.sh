@@ -25,6 +25,12 @@ fi
 sed "s/\(sql file loads properly|10\).*/\1|${score}|${comments}/" comments.txt > tmp
 mv tmp comments.txt
 
+if [ $errcode -ne 0 ]; then
+  >&2 echo "error creating db"
+  cat setup_db.log
+  exit 1
+fi
+
 # run checks
 ${mydir}/test1.sh > enrollment_diff.log 2>&1  
 errcode=$?

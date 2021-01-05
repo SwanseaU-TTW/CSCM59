@@ -2,6 +2,9 @@
 checkdir=$(dirname $0)
 
 ${checkdir}/runchecks.sh
+if [ $? -ne 0 ]; then
+  exit 1
+fi
 ${checkdir}/gen_schema.sh
   
 # open pdfs

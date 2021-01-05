@@ -49,4 +49,6 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
+# remove tmpdir if everything worked ok
+rm -rf ${TMPDIR}
 

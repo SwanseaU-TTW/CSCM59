@@ -25,7 +25,9 @@ IFS=$'\n'
 viewfile=$(grep -r -i -l '^CREATE .*VIEW' *)
 let numviewfiles=0
 for f in ${viewfile}; do
-  let numviewfiles++
+  if [ "$f" != "$sqlfile" ]; then
+    let numviewfiles++
+  fi
 done
 if [ $numviewfiles -gt 1 ]; then
   >&2 echo "too many view/answer files"
@@ -46,6 +48,7 @@ mysql -u root < ${TESTFILE} 2>&1 # let mysql print errors
 
 # check that creation worked
 if [ $? -ne 0 ]; then
+  >&2 echo "error with file at ${TMPDIR}"
   exit 1
 fi
 

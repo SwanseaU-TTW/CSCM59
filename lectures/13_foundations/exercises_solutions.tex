@@ -1,0 +1,209 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  14pt,
+]{extarticle}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\pagenumbering{gobble}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\author{}
+\date{}
+
+\begin{document}
+
+\hypertarget{example-database}{%
+\section{Example database}\label{example-database}}
+
+The database has 6 relations. You may assume that the same column name
+in 2 tables indicates a primary/foreign key pair:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Branch}(Bname, Bcity, assets)
+\item
+  \textbf{Customer}(Cname, street, city)
+\item
+  \textbf{Account}(Anumber, Bname, balance)
+\item
+  \textbf{Loan}(Lnumber, Bname, amount)
+\item
+  \textbf{Depositor}(Cname, Anumber)
+\item
+  \textbf{Borrower}(Cname, Lnumber)
+\end{itemize}
+
+\newpage
+
+\hypertarget{relational-algebra}{%
+\section{Relational algebra}\label{relational-algebra}}
+
+The 5 operators are:
+
+\begin{itemize}
+\tightlist
+\item
+  Union
+\item
+  Difference
+\item
+  Cartesian Product (times, *)
+\item
+  Selection (where)
+\item
+  Projection (\{\})
+\end{itemize}
+
+\hypertarget{relational-calculus}{%
+\section{Relational calculus}\label{relational-calculus}}
+
+\(\{t | P(t)\}\)
+
+\begin{itemize}
+\tightlist
+\item
+  \(t\) is the set of tuples
+\item
+  \(P(t)\) is a predicate function
+\item
+  \(t.A\) or \(t[A]\) means attribute \(A\) of tuple \(t\)
+\item
+  \(t \in r\) means tuple \(t\) in relation \(r\)
+\end{itemize}
+
+\hypertarget{useful-first-order-logic-primitives}{%
+\subsection{Useful first-order logic
+primitives}\label{useful-first-order-logic-primitives}}
+
+\begin{itemize}
+\tightlist
+\item
+  \(\forall\): forall. \(\forall t \in r P(t)\) The condition must be
+  true for all tuples.
+\item
+  \(\exists\): exists. \(\exists t \in r P(t)\) There must be at least
+  one tuple where the condition holds true.
+\item
+  comparisons: \(<\), \(=\), \(>\), \(\leq\), \(\geq\), \(\neq\)
+\item
+  connectives: not (\(\neg\)), if (\(\Rightarrow\)), iff (if and only
+  if, \(\iff\)), and (\(\land\)), or (\(\lor\))
+\end{itemize}
+
+\newpage
+
+\hypertarget{example-query-1}{%
+\section{Example query 1}\label{example-query-1}}
+
+Find the loan number for each loan of an amount greater than \(1200\)
+
+\hypertarget{relational-algebra-1}{%
+\subsection{Relational algebra}\label{relational-algebra-1}}
+
+(Loan WHERE amount\textgreater1200)\{Lnumber\}
+
+\vspace{7cm}
+
+\hypertarget{relational-calculus-1}{%
+\subsection{Relational calculus}\label{relational-calculus-1}}
+
+\begin{equation*}
+\left\{ t.Lnumber | t.amount > 1200 \right\}
+\end{equation*}
+
+\newpage
+
+\hypertarget{example-query-2}{%
+\section{Example query 2}\label{example-query-2}}
+
+Find the branch name, branch city, and loan amount for loans of more
+than \(1200\)
+
+\hypertarget{relational-algebra-2}{%
+\subsection{Relational algebra}\label{relational-algebra-2}}
+
+((Loan WHERE amount\textgreater1200) JOIN Branch)\{Lnumber, Bname,
+Bcity\}
+
+\vspace{7cm}
+
+\hypertarget{relational-calculus-2}{%
+\subsection{Relational calculus}\label{relational-calculus-2}}
+
+\[
+\left\{ t.Lnumber, t.Bname, t.Bcity | \exists l \in \text{Loan}, t.Bname=l.Bname \land l.amount > 1200 \right\}
+\]
+
+\newpage
+
+\hypertarget{example-query-3}{%
+\section{Example query 3}\label{example-query-3}}
+
+Find the name of all customers with a loan from the Swansea branch and
+the city in which they live.
+
+\hypertarget{relational-algebra-3}{%
+\subsection{Relational algebra}\label{relational-algebra-3}}
+
+((((Branch WHERE city=Swansea) JOIN Loan JOIN Borrower JOIN Customer)
+JOIN (Branch b2 ON b2.Bcity=Customer.city JOIN Loan l2 ON
+l2.Bname=b2.Bname AND l2.Lnumber=Borrower.Lnumber)) \{CName\}
+
+\vspace{7cm}
+
+\hypertarget{relational-calculus-3}{%
+\subsection{Relational calculus}\label{relational-calculus-3}}
+
+
+\begin{multline*}
+\left\{ c.Cname | \exists b1 \in \text{Branch}, \exists b2 \in \text{Branch}, \exists l1 \in \text{Loan}, \exists l2 \in \text{Loan}, \right. \\
+\exists b \in \text{Borrower}, \exists c \in \text{Customer}, \\
+b1.city=Swansea \land b1.Bname=l1.Bname \land l1.Lnumber=b.Lnumber \land \\
+c.Cname=b.Cname \land c.city=b2.city \land b2.Bname=l2.Bname \land \\
+\left. l2.Lnumber=b.Lnumber \right\}
+\end{multline*}
+
+\end{document}
